@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".UrlinfoActivity">
+
+
+    <TextView
+        android:id="@+id/URL"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="20dp"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:text="URL"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/atras" />
+
+    <TextView
+        android:id="@+id/Green"
+        android:layout_width="404dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:text="Isgreen"
+        android:textAlignment="center"
+        android:textSize="12dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/URL" />
+
+    <TextView
+        android:id="@+id/cleanerthan"
+        android:layout_width="416dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:inputType="textMultiLine"
+        android:textAlignment="center"
+        android:maxLines="3"
+        android:text="CleanerThan"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.201"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Green" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/cargando"
+        android:layout_width="170dp"
+        android:layout_height="182dp"
+        android:layout_marginBottom="260dp"
+        android:background="#fff"
+        android:contentDescription="Cargando"
+        android:src="@drawable/reloj"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/errormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Error de conexión"
+        android:textColor="#D83B37"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cargando"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <ImageButton
+        android:id="@+id/atras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        android:background="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back_fill0_wght400_grad0_opsz48" />
+
+    <TextView
+        android:id="@+id/energia"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:inputType="textMultiLine"
+        android:maxLines="3"
+        android:scrollHorizontally="false"
+        android:text="energia"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleanerthan" />
+
+    <TextView
+        android:id="@+id/Co2Grid"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="20dp"
+        android:text="Co2Grid"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/energia" />
+
+    <TextView
+        android:id="@+id/Co2Renewbable"
+        android:layout_width="406dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Co2Renewbable"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Co2Grid" />
+
+    <Button
+        android:id="@+id/guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="Guardar"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded"
+        android:backgroundTint="#338926"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

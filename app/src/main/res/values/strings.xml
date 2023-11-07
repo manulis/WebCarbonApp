@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Tarea7</string>
+
+    <string name="abrir_menu">Abrir menú de opciones</string>
+    <string name="cerrar_menu">Cerrar menú de opciones</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
